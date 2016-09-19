@@ -1,0 +1,66 @@
+{Primer Ejemplo}
+PROGRAM Ejemplo;
+	VAR a, b: INTEGER;	{globales}
+
+PROCEDURE proc1 (VAR x: INTEGER);
+	VAR b: INTEGER;
+BEGIN
+	b:= 3;
+	x:= b * 2 + a
+END;	{fin de proc1}
+
+PROCEDURE proc2 (d: INTEGER);
+	VAR	u: INTEGER;
+		v: BOOLEAN;
+	FUNCTION fun (x: INTEGER): BOOLEAN;
+		VAR a: INTEGER;
+	BEGIN
+		a:= 2;
+		return (u MOD a) = b
+	END;	{fin de fun}
+BEGIN	{proc2}
+	u:= a + d;
+	v:= fun (u)
+END;	{fin de proc2}
+
+BEGIN	{principal}
+	a:= 1;
+	proc1 (a);
+	proc2 (a);
+	fun (b)
+END.	{fin de principal}
+
+
+/*Segundo Ejemplo*/
+
+int a, b; 	/*globales*/
+
+void proc1 (int *x)
+{
+	int b;
+	b = 3;
+	*x = b * 2 + a;
+}
+
+boolean fun (int x)
+{
+	int a;
+	a = 2;
+	return (u % a) == b;
+}
+
+void proc2 (int d)
+{
+	int u;
+	boolean v;
+	u = a + d;
+	v = fun (u);
+}
+
+void main ()
+{
+	a = 1;
+	proc1 (&a);
+	proc2 (&a);
+	fun (b);
+}

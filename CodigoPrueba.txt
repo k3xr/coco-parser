@@ -1,0 +1,11 @@
+var altura
+var base
+
+function cosa(i){
+	var base
+	document.write ("hola")
+}
+
+
+base= cosa(9)
+
